@@ -27,12 +27,12 @@ Here's the list of domains which are blocked off by default.
 ```
 facebook.com
 twitter.com
-newsblur.com
-pocket.com
+www.newsblur.com
+getpocket.com
 clicky.com
 blog.ponyfoo.com
 bevacqua.io
-echojs.com
+www.echojs.com
 news.ycombinator.com
 lobste.rs
 ```

@@ -1,5 +1,6 @@
 # 0.1.3
 
+- Updated default blacklist
 - List hosed domains using `hose --list`
 
 # 0.1.2
