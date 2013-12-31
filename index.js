@@ -8,7 +8,8 @@ program
     .option('-r, --remove', 'Removes the domain')
     .option('-R, --remove-all', 'Wipes the blacklist')
     .option('-H, --hosts <hosts>', 'The hosts file to use')
-    .option('--off')
+    .option('--off', 'Turns off the hose')
+    .option('--list', 'Prints the blacklist')
     .parse(process.argv);
 
 if (program.hosts) {
@@ -32,6 +33,10 @@ if (domains.length) {
             console.log('Wiped out blacklist.')
         }
         etc(err);
+    });
+} else if (program.list) {
+    Object.keys(settings.domains).forEach(function (domain) {
+        console.log(domain);
     });
 } else {
     etc();

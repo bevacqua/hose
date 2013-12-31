@@ -49,6 +49,10 @@ Removes domains from the blacklist
 
 Wipes the blacklist
 
+### `hose --list`
+
+Prints the blacklist
+
 ### `hose -H <hosts>`
 
 Change the file for hosts, which defaults to `/etc/hosts`

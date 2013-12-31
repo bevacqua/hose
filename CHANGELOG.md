@@ -1,3 +1,7 @@
+# 0.1.3
+
+- List hosed domains using `hose --list`
+
 # 0.1.2
 
 - Supports adding or removing multiple domains
