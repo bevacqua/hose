@@ -2,6 +2,7 @@
 var settingsJson = './settings.json';
 var settings = require(settingsJson);
 var fs = require('fs');
+var path = require('path');
 
 module.exports = settings;
 
@@ -30,5 +31,7 @@ settings.wipe = function (done) {
 }
 
 settings.save = function (done) {
-    fs.writeFile(settingsJson, JSON.stringify(settings, null, 2), done);
+    var absolute = path.resolve(__dirname, settingsJson);
+    var json = JSON.stringify(settings, null, 2);
+    fs.writeFile(absolute, json, done);
 };

@@ -1,3 +1,7 @@
+# 0.1.4
+
+- Fix path to settings when writing
+
 # 0.1.3
 
 - Updated default blacklist
