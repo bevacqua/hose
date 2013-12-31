@@ -38,7 +38,7 @@ module.exports = function (off, err) {
     }
 
     function lifted () {
-        console.log('Hose lifted.');
+        console.log('Hose turned off.');
     }
 
     function hosed () {

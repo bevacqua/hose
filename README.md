@@ -37,15 +37,19 @@ news.ycombinator.com
 lobste.rs
 ```
 
-### `hose -r <domain>`
-
-Removes a domain from the blacklist
-
 ### `hose <domain>`
 
 Adds a domain to the blacklist
 
-### `hose -h <hosts>`
+### `hose -r <domain>`
+
+Removes a domain from the blacklist
+
+### `hose --remove-all`
+
+Wipes the blacklist
+
+### `hose -H <hosts>`
 
 Change the file for hosts, which defaults to `/etc/hosts`
 

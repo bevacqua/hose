@@ -20,6 +20,11 @@ settings.remove = function (domain, done) {
     settings.save(done);
 };
 
+settings.wipe = function (done) {
+    settings.domains = {};
+    settings.save(done);
+}
+
 settings.save = function (done) {
     fs.writeFile(settingsJson, JSON.stringify(settings, null, 2), done);
 };
