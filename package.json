@@ -1,0 +1,18 @@
+{
+  "name": "hose",
+  "description": "Trap access to domains you use frequently, from 9 to 5",
+  "homepage": "https://github.com/bevacqua/hose",
+  "author": {
+    "name": "Nicolas Bevacqua",
+    "email": "ng@bevacqua.io",
+    "url": "http://bevacqua.io"
+  },
+  "version": "0.1.0",
+  "preferGlobal": true,
+  "bin": {
+    "hose": "./bin/hose"
+  },
+  "dependencies": {
+    "commander": "~2.1.0"
+  }
+}

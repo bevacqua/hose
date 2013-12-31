@@ -1,0 +1,15 @@
+{
+  "hosts": "/etc/hosts",
+  "domains": {
+    "facebook.com": {},
+    "twitter.com": {},
+    "newsblur.com": {},
+    "pocket.com": {},
+    "clicky.com": {},
+    "blog.ponyfoo.com": {},
+    "bevacqua.io": {},
+    "echojs.com": {},
+    "news.ycombinator.com": {},
+    "lobste.rs": {}
+  }
+}
