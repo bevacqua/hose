@@ -27,6 +27,7 @@ Here's the list of domains which are blocked off by default.
 ```
 facebook.com
 twitter.com
+tweetdeck.twitter.com
 www.newsblur.com
 getpocket.com
 clicky.com
