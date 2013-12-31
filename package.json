@@ -7,7 +7,7 @@
     "email": "ng@bevacqua.io",
     "url": "http://bevacqua.io"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "preferGlobal": true,
   "bin": {
     "hose": "./bin/hose"

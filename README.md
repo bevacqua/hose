@@ -2,7 +2,7 @@
 
 > Trap access to domains you use frequently, from 9 to 5
 
-Improve your productivity by disabling access to domains you frequent
+Improve your productivity by easily disabling access to domains you frequent. Set it up once, then just use `hose` and `hose --off`!
 
 # Install
 
@@ -37,13 +37,13 @@ news.ycombinator.com
 lobste.rs
 ```
 
-### `hose <domain>`
+### `hose <domain> <domain> <domain>`
 
-Adds a domain to the blacklist
+Adds domains to the blacklist
 
-### `hose -r <domain>`
+### `hose -r <domain> <domain> <domain>`
 
-Removes a domain from the blacklist
+Removes domains from the blacklist
 
 ### `hose --remove-all`
 

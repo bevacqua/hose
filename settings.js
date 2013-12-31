@@ -10,13 +10,17 @@ settings.set = function (key, value, done) {
     settings.save(done);
 };
 
-settings.add = function (domain, done) {
-    settings.domains[domain] = {};
+settings.add = function (domains, done) {
+    domains.forEach(function (domain) {
+        settings.domains[domain] = {};
+    });
     settings.save(done);
 };
 
-settings.remove = function (domain, done) {
-    delete settings.domains[domain];
+settings.remove = function (domains, done) {
+    domains.forEach(function (domain) {
+        delete settings.domains[domain];
+    });
     settings.save(done);
 };
 

@@ -16,15 +16,15 @@ if (program.hosts) {
 }
 
 var etc = require('./etc.js').bind(null, program.off);
-var domain = program.args[0];
-if (domain) {
+var domains = program.args;
+if (domains.length) {
     if (program.remove) {
-        settings.remove(domain, etc);
+        settings.remove(domains, etc);
     } else {
-        settings.add(domain, etc);
+        settings.add(domains, etc);
     }
 } else if (program.remove) {
-    console.log('You must specify a domain name.');
+    console.log('You must specify domain name(s) to remove.');
     process.exit(1);
 } else if (program.removeAll) {
     settings.wipe(function (etc) {
