@@ -1,4 +1,4 @@
-# Hose
+![hose.png][1]
 
 > Trap access to domains you use frequently, from 9 to 5
 
@@ -69,3 +69,5 @@ Turns off the hose
 # License
 
 MIT
+
+  [1]: http://i.imgur.com/dMPODoQ.png
