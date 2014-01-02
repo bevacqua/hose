@@ -28,7 +28,7 @@ if (domains.length) {
     console.log('You must specify domain name(s) to remove.');
     process.exit(1);
 } else if (program.removeAll) {
-    settings.wipe(function (etc) {
+    settings.wipe(function (err) {
         if (!err) {
             console.log('Wiped out blacklist.')
         }
