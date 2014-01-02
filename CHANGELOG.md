@@ -1,3 +1,7 @@
+# 0.1.5
+
+- Fix issue in `hose --remove-all`
+
 # 0.1.4
 
 - Fix path to settings when writing
