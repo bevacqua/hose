@@ -27,7 +27,7 @@ module.exports = function (profile, off) {
         }
 
         function lines (domain) {
-            return util.format('%s\t%s\t\t\t%s', profile.trap, domain, generated);
+            return util.format('%s\t%s\t\t%s', profile.trap, domain, generated);
         }
 
         function capture (then) {
