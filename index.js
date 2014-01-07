@@ -16,8 +16,11 @@ program
 
 var profile = settings(program.profile);
 
-if (program.hosts) {
-    profile.set('hosts', program.hosts);
+if (program.setHosts) {
+    profile.set('hosts', program.setHosts);
+}
+if (program.setTrap) {
+    profile.set('trap', program.setTrap);
 }
 
 var etc = require('./etc.js')(profile, program.off);
