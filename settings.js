@@ -45,7 +45,7 @@ module.exports = function (profile) {
     settings.wipe = function (done) {
         settings.domains = {};
         settings.save(done);
-    }
+    };
 
     settings.save = function (done) {
         var absolute = path.resolve(__dirname, settingsJson);
