@@ -76,9 +76,9 @@ First off, I recommend creating a new profile.
 
 Start off by creating an empty profile
 
-### `hose -p site --set-trap localhost`
+### `hose -p site --set-trap 127.0.0.1`
 
-Trap on `localhost`, rather than `0.0.0.0`, so that you can visit those domains in your browser.
+Trap on `127.0.0.1`, rather than `0.0.0.0`, so that you can visit those domains in your browser.
 
 ### `hose -p site <domain> <domain> <domain>`
 
@@ -87,7 +87,7 @@ Provide a list of domains you want to be trapped.
 Of course, you can also do all of the above in one fell swoop.
 
 ```shell
-hose -p site --set-trap localhost <domain> <domain> <domain>
+hose -p site --set-trap 127.0.0.1 <domain> <domain> <domain>
 ```
 
 You need to specify the profile when turning it on or off, e.g:
