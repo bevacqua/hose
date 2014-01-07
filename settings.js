@@ -15,7 +15,7 @@ module.exports = function (profile) {
         settings = {
             name: profile,
             trap: '0.0.0.0',
-            hosts: '/etc/hosts'
+            hosts: '/etc/hosts',
             domains: {}
         };
         var absolute = path.resolve(__dirname, settingsJson);
