@@ -1,3 +1,12 @@
+# 0.2.0
+
+- Add support for multiple hose profiles
+- Added `--set-trap`, introducing ability to trap domains to something else than `0.0.0.0`
+
+**BREAKING**
+
+- Changed `--hosts` to `--set-hosts`
+
 # 0.1.5
 
 - Fix issue in `hose --remove-all`

@@ -66,6 +66,39 @@ Turns on the hose. Note that the hose is always turned on, unless we provide the
 
 Turns off the hose
 
+# Advanced Usage
+
+You can also use this program to redirect domains to a particular url. This is useful when testing web applications locally.
+
+First off, I recommend creating a new profile.
+
+### `hose -p site`
+
+Start off by creating an empty profile
+
+### `hose -p site --set-trap localhost`
+
+Trap on `localhost`, rather than `0.0.0.0`, so that you can visit those domains in your browser.
+
+### `hose -p site <domain> <domain> <domain>`
+
+Provide a list of domains you want to be trapped.
+
+Of course, you can also do all of the above in one fell swoop.
+
+```shell
+hose -p site --set-trap localhost <domain> <domain> <domain>
+```
+
+You need to specify the profile when turning it on or off, e.g:
+
+```shell
+hose -p site
+hose -p site --off
+```
+
+That's it!
+
 # License
 
 MIT

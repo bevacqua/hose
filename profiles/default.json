@@ -1,5 +1,7 @@
 {
+  "name": "default",
   "hosts": "/etc/hosts",
+  "trap": "0.0.0.0",
   "domains": {
     "facebook.com": {},
     "twitter.com": {},
