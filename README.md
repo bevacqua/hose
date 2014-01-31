@@ -4,7 +4,7 @@
 
 Improve your productivity by easily disabling access to domains you frequent. Set it up once, then just use `hose` and `hose --off`!
 
-You can also use `hose` to redirect domains to localhost, for development purposes. See [advanced usage][#advanced-usage]
+You can also use `hose` to redirect domains to localhost, for development purposes. See [advanced usage](#advanced-usage)
 
 # Install
 
