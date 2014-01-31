@@ -1,6 +1,6 @@
 ![hose.png][1]
 
-> Trap access to domains you use frequently, from 9 to 5
+> Redirect any domain to localhost for convenience or productivity!
 
 Improve your productivity by easily disabling access to domains you frequent. Set it up once, then just use `hose` and `hose --off`!
 
