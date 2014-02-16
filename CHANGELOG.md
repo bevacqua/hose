@@ -1,3 +1,7 @@
+# 0.3.0
+
+- Added `hose open` to open up the hosts file
+
 # 0.2.0
 
 - Add support for multiple hose profiles

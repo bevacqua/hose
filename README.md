@@ -68,6 +68,10 @@ Turns on the hose. Note that the hose is always turned on, unless we provide the
 
 Turns off the hose
 
+### `hose open`
+
+Opens the hosts file in `$EDITOR`, or `vi` if `$EDITOR` isn't set.
+
 # Advanced Usage
 
 You can also use this program to redirect domains to a particular url. This is useful when testing web applications locally.

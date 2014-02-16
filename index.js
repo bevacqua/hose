@@ -1,6 +1,8 @@
 var program = require('commander');
+var spawn = require('child_process').spawn;
 var pkg = require('./package.json');
 var settings = require('./settings.js');
+var editor = (process.env.EDITOR || 'vi').split(' ')[0];
 
 program
     .usage('[options] <domain*>')
@@ -12,6 +14,7 @@ program
     .option('-H, --set-trap <trap>', 'The trapping IP to use')
     .option('--off', 'Turns off the hose')
     .option('--list', 'Prints the blacklist')
+    .option('--open', 'Opens the hosts file')
     .parse(process.argv);
 
 var profile = settings(program.profile);
@@ -45,6 +48,8 @@ if (domains.length) {
     Object.keys(profile.domains).forEach(function (domain) {
         console.log(domain);
     });
+} else if (program.open) {
+    spawn(editor, [profile.hosts]);
 } else {
     etc();
 }
