@@ -3,21 +3,31 @@
 var fs = require('fs');
 var path = require('path');
 var util = require('util');
+var windows = process.platform === 'win32';
+
+function transform (settings) {
+    if (windows) {
+        if (settings.hosts === '/etc/hosts') {
+            settings.hosts = 'c:/windows/system32/drivers/etc/hosts';
+        }
+    }
+    return settings;
+}
 
 module.exports = function (profile) {
     var settingsJson = util.format('./profiles/%s.json', profile || 'default');
     var settings;
 
     try {
-        settings = require(settingsJson);
+        settings = transform(require(settingsJson));
     } catch (e) {
         console.log('Creating "%s" profile.', profile);
-        settings = {
+        settings = transform({
             name: profile,
             trap: '0.0.0.0',
             hosts: '/etc/hosts',
             domains: {}
-        };
+        });
         var absolute = path.resolve(__dirname, settingsJson);
         var json = JSON.stringify(settings, null, 2);
         fs.writeFileSync(absolute, json);

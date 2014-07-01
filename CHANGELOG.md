@@ -1,3 +1,7 @@
+# 1.0.0
+
+- Windows support
+
 # 0.3.0
 
 - Added `hose open` to open up the hosts file
